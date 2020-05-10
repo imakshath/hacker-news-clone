@@ -11,7 +11,7 @@ const initialState = {
  */
 const incrementUpVoteByStoryId = (items, storyId) => {
     return items.map((story) => {
-        if (story.objectID == storyId) {
+        if (story.objectID === storyId) {
             const ret =  {
                 ...story,
                 num_voteup: ++story.num_voteup || 1,

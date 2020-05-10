@@ -10,7 +10,6 @@ const HEADERS = {
 
 class ApiService {
     constructor({ baseURL = API_ROOT, timeout = TIMEOUT, headers = HEADERS, auth }) {
-        console.log(baseURL);
         const client = axios.create({
             baseURL,
             timeout,

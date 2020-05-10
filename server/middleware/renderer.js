@@ -8,13 +8,11 @@ const path = require("path");
 const fs = require("fs");
 
 export default (store) => (req, res, next) => {
-    console.log('--------');
     // point to the html file created by CRA's build tool
     const filePath = path.resolve(__dirname, '..', '..', 'build', 'index.html');
 
     fs.readFile(filePath, 'utf8', (err, htmlData) => {
         if (err) {
-            console.error('err', err);
             return res.status(404).end()
         }
 
@@ -24,9 +22,6 @@ export default (store) => (req, res, next) => {
             </ReduxProvider>
         );
 
-        // render the app as a string
-        // const html = ReactDOMServer.renderToString(<App />);
-        console.log(html, '-----');
         // inject the rendered app into our html and send it
         return res.send(
             htmlData.replace(
