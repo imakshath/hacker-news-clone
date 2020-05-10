@@ -10,7 +10,7 @@ branches:
   - master
 
 script:
-    - npm test
+    # - npm test
     - npm run build
 
 deploy:
