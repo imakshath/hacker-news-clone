@@ -1,0 +1,38 @@
+
+@import './styles/variables';
+
+.dark-color {
+  color: $primary-color;
+}
+
+.base-bg-color {
+  color: $base-bg-color;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.text-center { 
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none !important;
+  color: $primary-color;
+}
+
+a[disabled] {
+  pointer-events: none;
+}
+
+@media (min-width: 1200px) {
+  .App {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

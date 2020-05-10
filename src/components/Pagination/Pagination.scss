@@ -1,0 +1,16 @@
+
+@import '../../styles/variables';
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: $base-bg-color;
+    padding: 5px 20px 5px 10px;
+}
+
+.vertical-line {
+    border-right: 2px solid $base-bg-color;
+    height: 13px;
+    margin: 2px 5px 0 5px;
+}
