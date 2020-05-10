@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+  - "10.16.3"
+
+cache: npm
+
+branches:
+  only:
+  - master
+
+script:
+    - npm test
+    - npm run build
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "$HEROKU_API_KEY"
+  skip_cleanup: true
+  app: hacker-news-clone-2020
+
+after_deploy:
+# change settings in Procfile for client
+# web: node src/server/index.js
+# web: node server.js
+- bash ./procfile_upd.sh

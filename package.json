@@ -27,8 +27,9 @@
     "underscore": "^1.10.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && node server/bootstrap.js",
+    "start": "node server/bootstrap.js",
+    "build": "react-scripts build",
+    "client": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
