@@ -1,5 +1,6 @@
 import express from 'express';
 import indexController from './controllers/index';
+const path = require('path');
 
 const PORT = 3000;
 
@@ -7,6 +8,8 @@ const PORT = 3000;
 const app = express();
 app.use(indexController);
 
+const publicPath = path.join(__dirname, '..', 'public');
+app.use(express.static(publicPath));
 
 // start the app
 app.listen(PORT, (error) => {

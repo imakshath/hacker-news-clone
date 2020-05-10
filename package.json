@@ -28,7 +28,7 @@
     "underscore": "^1.10.2"
   },
   "scripts": {
-    "start": "pm2 kill && pm2 start",
+    "start": "pm2 kill && node server/bootstrap.js",
     "build": "react-scripts build",
     "client": "react-scripts start",
     "test": "react-scripts test",
