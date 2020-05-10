@@ -17,6 +17,7 @@
     "ignore-styles": "^5.0.1",
     "moment": "^2.24.0",
     "node-sass": "^4.14.1",
+    "pm2": "^4.4.0",
     "react": "^16.13.1",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
@@ -27,7 +28,7 @@
     "underscore": "^1.10.2"
   },
   "scripts": {
-    "start": "node server/bootstrap.js",
+    "start": "pm2 kill && pm2 start",
     "build": "react-scripts build",
     "client": "react-scripts start",
     "test": "react-scripts test",
