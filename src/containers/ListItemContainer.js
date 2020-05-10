@@ -5,7 +5,6 @@ import ListItem from '../components/ListItem';
 const mapDispatchToProps = (dispatch) => {
     return {
         voteUpStory: (storyId) => {
-            console.log(storyId, 'storyId');
             dispatch(actions.voteUpStory(storyId));
         },
         hideStory: (storyId) => {
