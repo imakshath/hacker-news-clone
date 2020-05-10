@@ -18,7 +18,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: "$HEROKU_API_KEY"
+    secure: $HEROKU_API_KEY
   skip_cleanup: true
   app: hacker-news-clone-2020
 
