@@ -1,29 +1,19 @@
 language: node_js
-
 node_js:
-  - "stable"
-
+- stable
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 branches:
   only:
   - master
-
 script:
-    # - npm test
-    - npm run build
-
+- npm run build
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_API_KEY
+    secure: ZVYmysVxUj1riFjKgO3Zek+Cdv3VOAXpkN7DNGxbUZPjtNi2ANwWXS2DMHV3hBXkw2KUnZGSs9WpxLPdytruM+ksMkttuU4OSguCr0twNxNP5UiNE90jUWnX8Yyuel8WkQH+pG6FCatkAGty3fqj+f2SvFgz6/TxqPKGsWf4/IT9u/WVZjssenS3A/nVdYcmImYtNnq3g6q7pxo0NpEoHZVyaXAwm1KrYW4RmNjtqksaLWJwYbc+36Kjnlnecc+5Lr/q0KQmXGtg6OOJfJrBQoJ4agfScLc0tq6Jmh7ajiZRjMPwQuftIzVAVD9Rk4qiiwhKEvOpes4IjRI70+xHlgFclq3CT7MX+Ysi+yDUchQcYBQnQXx5De5RXH8Lk6Hd/nWxE2mlbcFIqXGB2m8vvUao8Uby3kFDNPBCPWD4SFzLCrgrAmmDRwn5V/6vPWL9MKXvTWJT69vVovu40EW9CIbrfai3lUOneRj8CuUsRQiAplol+dRsEgAo9OiXR790zctibxH1bdzEn9LgOYZVxVBWeeNQ5FZ2nND1ujQYq68sslCBXxxnt6kyFSBu82STO4DbODU4WlIRhKc0H9PVf1JrhU6s73XkFbCleeaduetGduzfjDS7JUs9P+oL7BaRIL1oMMNLWsZvfkWDO2dzzxQC+m2ab57Dw+8Pg7i/kcs=
   skip_cleanup: true
   app: hacker-news-clone-2020
-
 after_deploy:
-# change settings in Procfile for client
-# web: node src/server/index.js
-# web: node server.js
 - bash ./procfile_upd.sh
