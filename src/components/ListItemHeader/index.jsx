@@ -1,8 +1,8 @@
 import React from 'react';
     
-function ListItemHeader({ story }) {
+function ListItemHeader() {
     return (
-        <div className="list-item-header">
+        <div data-testid="list-item-header" className="list-item-header">
             <div className="item">Comments</div>
             <div className="item">Vote Count</div>
             <div className="item">Up Vote</div>

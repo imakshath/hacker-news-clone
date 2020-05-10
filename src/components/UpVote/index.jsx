@@ -7,7 +7,7 @@ function UpVote({ onVoteUpStory, storyId }) {
     }, [onVoteUpStory, storyId]);
 
     return (
-        <div className="upvote-arrow" onClick={handleVoteUp}></div>
+        <div data-testid={`upvote-${storyId}`} className="upvote-arrow" onClick={handleVoteUp}></div>
     );
 }
 

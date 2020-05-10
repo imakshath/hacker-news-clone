@@ -8,6 +8,7 @@ branches:
   only:
   - master
 script:
+- npm run test
 - npm run build
 deploy:
   provider: heroku

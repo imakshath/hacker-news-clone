@@ -28,7 +28,7 @@
     "underscore": "^1.10.2"
   },
   "scripts": {
-    "start": "pm2 kill && node server/bootstrap.js",
+    "start": "node server/bootstrap.js",
     "build": "react-scripts build",
     "client": "react-scripts start",
     "test": "react-scripts test",
@@ -49,5 +49,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://hn.algolia.com"
+  "proxy": "https://hn.algolia.com",
+  "devDependencies": {
+    "react-test-renderer": "^16.13.1"
+  }
 }

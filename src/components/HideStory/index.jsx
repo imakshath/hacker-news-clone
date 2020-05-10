@@ -5,7 +5,7 @@ function HideStory({ onHideStory, storyId }){
         onHideStory(storyId);
     }, [onHideStory, storyId]);
     return (
-        <span className="hide-action-wrapper ml-5" onClick={handleHideStory}>[ hide ]</span>
+        <span data-testid={`hide-story-${storyId}`} className="hide-action-wrapper ml-5" onClick={handleHideStory}>[ hide ]</span>
     )
 };
 

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListItemHeader /> component should match snapshot 1`] = `
+<div
+  className="list-item-header"
+  data-testid="list-item-header"
+>
+  <div
+    className="item"
+  >
+    Comments
+  </div>
+  <div
+    className="item"
+  >
+    Vote Count
+  </div>
+  <div
+    className="item"
+  >
+    Up Vote
+  </div>
+  <div
+    className="item"
+  >
+    News Detail
+  </div>
+</div>
+`;

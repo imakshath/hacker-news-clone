@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HideStory /> component should match snapshot 1`] = `
+<span
+  className="hide-action-wrapper ml-5"
+  data-testid="hide-story-undefined"
+  onClick={[Function]}
+>
+  [ hide ]
+</span>
+`;

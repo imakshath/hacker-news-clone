@@ -12,7 +12,7 @@ function Pagination({ page, isFetching, totalPages }) {
     }, [page, totalPages, isFetching]);
 
     return (
-        <div className="pagination-wrapper">
+        <div className="pagination-wrapper" data-testid="pagination-wrapper">
             <Link
                 disabled={isPrevDisabled}
                 className="text-bold base-bg-color"
