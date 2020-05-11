@@ -36,6 +36,10 @@ Based on each commit to Master branch CI will trigger. It will run following ste
 
 https://vast-falls-77512.herokuapp.com/
 
+### zeit now deployment
+
+https://hacker-news-clone-cimweswt7.now.sh/
+
 ### github repo
 
 https://github.com/imakshath/hacker-news-clone
